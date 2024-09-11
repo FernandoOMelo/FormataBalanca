@@ -3,7 +3,7 @@ object frmPrincipal: TfrmPrincipal
   Top = 0
   BorderStyle = bsNone
   Caption = 'frmPrincipal'
-  ClientHeight = 600
+  ClientHeight = 619
   ClientWidth = 800
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -19,14 +19,13 @@ object frmPrincipal: TfrmPrincipal
     Left = 0
     Top = 0
     Width = 800
-    Height = 600
+    Height = 619
     Align = alClient
     BevelOuter = bvNone
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 810
-    ExplicitHeight = 610
+    ExplicitHeight = 600
     object pnTop: TPanel
       Left = 0
       Top = 0
@@ -41,8 +40,6 @@ object frmPrincipal: TfrmPrincipal
       Padding.Bottom = 19
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 32
-      ExplicitTop = -39
       object imgLogo: TImage
         Left = 24
         Top = 20
@@ -389,9 +386,6 @@ object frmPrincipal: TfrmPrincipal
         Padding.Bottom = 14
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 600
-        ExplicitTop = 34
-        ExplicitHeight = 32
         object pnManual: TPanel
           Left = 0
           Top = 14
@@ -400,8 +394,6 @@ object frmPrincipal: TfrmPrincipal
           Align = alLeft
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitLeft = 5
-          ExplicitTop = 10
           object shpManual: TShape
             Left = 0
             Top = 0
@@ -444,15 +436,13 @@ object frmPrincipal: TfrmPrincipal
           Align = alRight
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitLeft = 5
-          ExplicitTop = 10
           object shpFechar: TShape
             Left = 0
             Top = 0
             Width = 83
             Height = 32
             Align = alClient
-            Brush.Color = clBlack
+            Brush.Color = 16737792
             Pen.Style = psClear
             Shape = stRoundRect
             ExplicitLeft = 56
@@ -474,6 +464,7 @@ object frmPrincipal: TfrmPrincipal
             Font.Name = 'Segoe UI Semibold'
             Font.Style = []
             ParentFont = False
+            OnClick = btnFecharClick
             ExplicitLeft = 24
             ExplicitTop = 24
             ExplicitWidth = 23
@@ -484,7 +475,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object pnButtom: TPanel
       Left = 0
-      Top = 519
+      Top = 538
       Width = 800
       Height = 81
       Align = alBottom
@@ -496,9 +487,8 @@ object frmPrincipal: TfrmPrincipal
       Padding.Bottom = 7
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 529
-      ExplicitWidth = 810
-      object Label5: TLabel
+      ExplicitTop = 380
+      object lbCopyrigth: TLabel
         Left = 24
         Top = 61
         Width = 752
@@ -506,9 +496,15 @@ object frmPrincipal: TfrmPrincipal
         Align = alBottom
         Alignment = taCenter
         Caption = 'Desenvolvimentos de Sistemas Galileo 2024  '#174
-        ExplicitWidth = 224
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Segoe UI Semibold'
+        Font.Style = []
+        ParentFont = False
+        ExplicitWidth = 240
       end
-      object Panel3: TPanel
+      object pnExecute: TPanel
         Left = 24
         Top = 10
         Width = 752
@@ -516,14 +512,13 @@ object frmPrincipal: TfrmPrincipal
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitTop = 261
-        object Shape1: TShape
+        object shpExecute: TShape
           Left = 0
           Top = 0
           Width = 752
           Height = 43
           Align = alClient
-          Brush.Color = clBlack
+          Brush.Color = 16737792
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 56
@@ -531,13 +526,13 @@ object frmPrincipal: TfrmPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton1: TSpeedButton
+        object btnExecute: TSpeedButton
           Left = 0
           Top = 0
           Width = 752
           Height = 43
           Align = alClient
-          Caption = 'Fechar'
+          Caption = 'Executar'
           Flat = True
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
@@ -545,6 +540,7 @@ object frmPrincipal: TfrmPrincipal
           Font.Name = 'Segoe UI Semibold'
           Font.Style = []
           ParentFont = False
+          OnClick = btnExecuteClick
           ExplicitLeft = 8
           ExplicitTop = 11
           ExplicitHeight = 81
@@ -555,7 +551,7 @@ object frmPrincipal: TfrmPrincipal
       Left = 0
       Top = 100
       Width = 800
-      Height = 419
+      Height = 438
       Align = alClient
       BevelOuter = bvNone
       Color = clWhite
@@ -565,7 +561,7 @@ object frmPrincipal: TfrmPrincipal
       Padding.Bottom = 20
       ParentBackground = False
       TabOrder = 2
-      ExplicitTop = 105
+      ExplicitHeight = 419
       object pnLegend: TPanel
         AlignWithMargins = True
         Left = 24
@@ -610,12 +606,12 @@ object frmPrincipal: TfrmPrincipal
           ExplicitWidth = 457
         end
       end
-      object pnInput: TPanel
+      object pnSource: TPanel
         AlignWithMargins = True
         Left = 24
         Top = 201
         Width = 752
-        Height = 86
+        Height = 69
         Margins.Left = 0
         Margins.Top = 0
         Margins.Right = 0
@@ -623,8 +619,7 @@ object frmPrincipal: TfrmPrincipal
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitTop = 95
-        object Label2: TLabel
+        object lbSource: TLabel
           AlignWithMargins = True
           Left = 0
           Top = 0
@@ -644,20 +639,28 @@ object frmPrincipal: TfrmPrincipal
           ParentFont = False
           ExplicitWidth = 112
         end
-        object ComboBox1: TComboBox
+        object cbSource: TComboBox
           Left = 0
           Top = 22
           Width = 752
-          Height = 21
+          Height = 28
           Align = alClient
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = 20
+          Font.Name = 'Tahoma'
+          Font.Style = []
           ItemIndex = 0
+          ParentFont = False
           TabOrder = 0
-          Text = 'ARQUIVO DE INFORMA'#199#195'O NUTRICIONAL MGV7'
+          Text = 'ARQUIVO DE ITENS'
           Items.Strings = (
-            'ARQUIVO DE INFORMA'#199#195'O NUTRICIONAL MGV7')
-          ExplicitLeft = 96
-          ExplicitTop = 40
-          ExplicitWidth = 145
+            'ARQUIVO DE ITENS'
+            'ARQUIVOS DE INFORMA'#199#195'O NUTRICIONAL'
+            'ARQUIVO DE INFORMA'#199#213'ES EXTRAS'
+            'ARQUIVO DE FORNECEDORES'
+            'ARQUIVO DE TARAS PREDETERMINADAS')
+          ExplicitTop = 25
         end
       end
       object Panel1: TPanel
@@ -707,50 +710,6 @@ object frmPrincipal: TfrmPrincipal
             'N004194003030100601010220014008003000000014100000|00010302010050' +
             '1010220034032014008003000000014100000000000000|'
           ExplicitHeight = 23
-        end
-      end
-      object Panel2: TPanel
-        AlignWithMargins = True
-        Left = 24
-        Top = 293
-        Width = 752
-        Height = 86
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 0
-        Margins.Bottom = 20
-        Align = alBottom
-        BevelOuter = bvNone
-        TabOrder = 3
-        ExplicitTop = 95
-        object Label4: TLabel
-          Left = 0
-          Top = 0
-          Width = 752
-          Height = 17
-          Align = alTop
-          Caption = 'Resultado: '
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = 18
-          Font.Name = 'Segoe UI Semibold'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 67
-        end
-        object Memo1: TMemo
-          Left = 0
-          Top = 17
-          Width = 752
-          Height = 69
-          Align = alClient
-          Lines.Strings = (
-            'Memo1')
-          TabOrder = 0
-          ExplicitLeft = 12
-          ExplicitTop = 31
-          ExplicitWidth = 185
-          ExplicitHeight = 89
         end
       end
     end

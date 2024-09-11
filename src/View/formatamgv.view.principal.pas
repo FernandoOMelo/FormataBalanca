@@ -24,19 +24,18 @@ type
     pnLegend: TPanel;
     lbLegenda: TLabel;
     Label1: TLabel;
-    pnInput: TPanel;
-    Label2: TLabel;
+    pnSource: TPanel;
+    lbSource: TLabel;
     Panel1: TPanel;
     Label3: TLabel;
     Edit1: TEdit;
-    ComboBox1: TComboBox;
-    Panel2: TPanel;
-    Label4: TLabel;
-    Memo1: TMemo;
-    Panel3: TPanel;
-    Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Label5: TLabel;
+    cbSource: TComboBox;
+    pnExecute: TPanel;
+    shpExecute: TShape;
+    btnExecute: TSpeedButton;
+    lbCopyrigth: TLabel;
+    procedure btnFecharClick(Sender: TObject);
+    procedure btnExecuteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,6 +47,26 @@ var
 
 implementation
 
+uses
+  formatamgv.model.principal;
+
 {$R *.dfm}
+
+procedure TfrmPrincipal.btnExecuteClick(Sender: TObject);
+var
+  Principal: TPrincipal;
+begin
+  Principal := TPrincipal.Create;
+  try
+
+  finally
+    Principal.Free;
+  end;
+end;
+
+procedure TfrmPrincipal.btnFecharClick(Sender: TObject);
+begin
+  Close;
+end;
 
 end.
