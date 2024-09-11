@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/02/23 17:50:58.000.764,=C:\Users\Fernando Melo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/18 12:16:14.000.182,=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/10 17:50:05.000.244,=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/10 17:52:18.000.549,C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Fontes\Projetos FM\FormataMGV\src\View\formatamgv.view.principal.pas</Transaction>
+    <Transaction>2024/09/10 17:52:18.000.549,C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Fontes\Projetos FM\FormataMGV\src\View\formatamgv.view.principal.dfm</Transaction>
+    <Transaction>2024/09/10 17:52:26.000.181,C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Fontes\Projetos FM\FormataMGV\FormataMGV.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
