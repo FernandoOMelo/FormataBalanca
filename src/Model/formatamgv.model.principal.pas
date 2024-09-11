@@ -18,7 +18,7 @@ const
   INFNUTRI  = 1;
   TXINFO    = 2;
   TARA      = 3;
-//  TXINFO    = 4;
+  ARQSOK    = 4;
 
 implementation
 
@@ -33,7 +33,7 @@ begin
     begin
       MInfNutri := TModelInfNutri.Create;
       try
-
+        MInfNutri.GetInfNutri(ARec);
       finally
         MInfNutri.Free;
       end;

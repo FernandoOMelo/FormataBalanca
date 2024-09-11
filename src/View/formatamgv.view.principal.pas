@@ -26,9 +26,9 @@ type
     Label1: TLabel;
     pnSource: TPanel;
     lbSource: TLabel;
-    Panel1: TPanel;
-    Label3: TLabel;
-    Edit1: TEdit;
+    pnInput: TPanel;
+    lbInput: TLabel;
+    edtInput: TEdit;
     cbSource: TComboBox;
     pnExecute: TPanel;
     shpExecute: TShape;
@@ -58,7 +58,7 @@ var
 begin
   Principal := TPrincipal.Create;
   try
-
+    Principal.CallModel(edtInput.Text, cbSource.ItemIndex);
   finally
     Principal.Free;
   end;

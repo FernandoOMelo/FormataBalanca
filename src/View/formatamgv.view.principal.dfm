@@ -663,7 +663,7 @@ object frmPrincipal: TfrmPrincipal
           ExplicitTop = 25
         end
       end
-      object Panel1: TPanel
+      object pnInput: TPanel
         AlignWithMargins = True
         Left = 24
         Top = 95
@@ -676,7 +676,7 @@ object frmPrincipal: TfrmPrincipal
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 2
-        object Label3: TLabel
+        object lbInput: TLabel
           Left = 0
           Top = 0
           Width = 752
@@ -691,7 +691,7 @@ object frmPrincipal: TfrmPrincipal
           ParentFont = False
           ExplicitWidth = 129
         end
-        object Edit1: TEdit
+        object edtInput: TEdit
           Left = 0
           Top = 17
           Width = 752
