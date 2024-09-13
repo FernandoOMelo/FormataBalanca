@@ -6,7 +6,7 @@ type
   TInfNutri359 = class
     private
       FIIII: string;
-      FCCCCC: string;
+      FCCCCCC: string;
       FNNN: string;
       FA: string;
       FPPP: string;
@@ -25,7 +25,7 @@ type
       FT: string;
       procedure SetA(const Value: string);
       procedure SetBBB(const Value: string);
-      procedure SetCCCCC(const Value: string);
+      procedure SetCCCCCC(const Value: string);
       procedure SetD(const Value: string);
       procedure SetEE(const Value: string);
       procedure SetEEEE(const Value: string);
@@ -42,7 +42,7 @@ type
       procedure SetT(const Value: string);
       procedure SetUUUUU(const Value: string);
     public
-      property CCCCC: string read FCCCCC write SetCCCCC;
+      property CCCCCC: string read FCCCCCC write SetCCCCCC;
       property BBB: string read FBBB write SetBBB;
       property D: string read FD write SetD;
       property EE: string read FEE write SetEE;
@@ -95,6 +95,7 @@ type
       FEE: string;
       FT: string;
       FJJJ: string;
+    FAAAAA: string;
       procedure SetBBB(const Value: string);
       procedure SetBBBBB(const Value: string);
       procedure SetCCCCC(const Value: string);
@@ -126,6 +127,7 @@ type
       procedure SetW(const Value: string);
       procedure SetYYY(const Value: string);
       procedure SetZZZZZ(const Value: string);
+    procedure SetAAAAA(const Value: string);
     public
       property N: string read FN write SetN;
       property MMM: string read FMMM write SetMMM;
@@ -150,6 +152,7 @@ type
       property LLLLL: string read FLLLLL write SetLLLLL;
       property GGGGG: string read FGGGGG write SetGGGGG;
       property W: string read FW write SetW;
+      property AAAAA: string read FAAAAA write SetAAAAA;
       property BBBBB: string read FBBBBB write SetBBBBB;
       property CCCCC: string read FCCCCC write SetCCCCC;
       property DDDDD: string read FDDDDD write SetDDDDD;
@@ -174,9 +177,9 @@ begin
   FBBB := Value;
 end;
 
-procedure TInfNutri359.SetCCCCC(const Value: string);
+procedure TInfNutri359.SetCCCCCC(const Value: string);
 begin
-  FCCCCC := Value;
+  FCCCCCC := Value;
 end;
 
 procedure TInfNutri359.SetD(const Value: string);
@@ -255,6 +258,11 @@ begin
 end;
 
 { TInfNutri429 }
+
+procedure TInfNutri429.SetAAAAA(const Value: string);
+begin
+  FAAAAA := Value;
+end;
 
 procedure TInfNutri429.SetBBB(const Value: string);
 begin

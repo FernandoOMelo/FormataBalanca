@@ -1,39 +1,36 @@
 object frameInfNutri: TframeInfNutri
   Left = 0
   Top = 0
-  Width = 752
-  Height = 419
+  Width = 800
+  Height = 519
   TabOrder = 0
   object pnMain: TPanel
     Left = 0
     Top = 0
-    Width = 752
-    Height = 419
+    Width = 800
+    Height = 438
     Align = alClient
     BevelOuter = bvNone
     Color = clWhite
     Padding.Left = 10
-    Padding.Top = 5
     Padding.Right = 10
     Padding.Bottom = 5
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 328
-    ExplicitTop = 48
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 752
+    ExplicitHeight = 419
     object gbRDC359: TGroupBox
       AlignWithMargins = True
       Left = 13
-      Top = 8
+      Top = 0
       Width = 223
-      Height = 403
+      Height = 430
+      Margins.Top = 0
       Align = alLeft
       Caption = 'RDC N'#186' 359/360'
       TabOrder = 0
-      ExplicitLeft = 10
-      ExplicitTop = 10
-      ExplicitHeight = 399
+      ExplicitTop = 8
+      ExplicitHeight = 403
       object edtN359: TLabeledEdit
         Left = 16
         Top = 24
@@ -598,12 +595,14 @@ object frameInfNutri: TframeInfNutri
     object gbRDC429: TGroupBox
       AlignWithMargins = True
       Left = 242
-      Top = 8
+      Top = 3
       Width = 295
-      Height = 403
+      Height = 427
       Align = alLeft
       Caption = 'RDC N'#186' 429'
       TabOrder = 1
+      ExplicitTop = 8
+      ExplicitHeight = 403
       object edtN429: TLabeledEdit
         Left = 25
         Top = 24
@@ -1448,15 +1447,15 @@ object frameInfNutri: TframeInfNutri
     object gbAdcRDC429: TGroupBox
       AlignWithMargins = True
       Left = 543
-      Top = 8
-      Width = 196
-      Height = 403
+      Top = 3
+      Width = 244
+      Height = 427
       Align = alClient
       Caption = 'Campos Adicionais da RDC N'#186' 429'
       TabOrder = 2
-      ExplicitTop = 2
-      ExplicitWidth = 202
-      ExplicitHeight = 409
+      ExplicitTop = 8
+      ExplicitWidth = 196
+      ExplicitHeight = 403
       object edtYYY429: TLabeledEdit
         Left = 9
         Top = 27
@@ -1512,6 +1511,79 @@ object frameInfNutri: TframeInfNutri
         ReadOnly = True
         ShowHint = True
         TabOrder = 1
+      end
+    end
+  end
+  object pnButtom: TPanel
+    Left = 0
+    Top = 438
+    Width = 800
+    Height = 81
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    Padding.Left = 24
+    Padding.Top = 10
+    Padding.Right = 24
+    Padding.Bottom = 7
+    ParentBackground = False
+    TabOrder = 1
+    object lbCopyrigth: TLabel
+      Left = 24
+      Top = 61
+      Width = 752
+      Height = 13
+      Align = alBottom
+      Alignment = taCenter
+      Caption = 'Desenvolvimentos de Sistemas Galileo 2024  '#174
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = []
+      ParentFont = False
+      ExplicitWidth = 240
+    end
+    object pnExecute: TPanel
+      Left = 24
+      Top = 10
+      Width = 752
+      Height = 43
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object shpExecute: TShape
+        Left = 0
+        Top = 0
+        Width = 752
+        Height = 43
+        Align = alClient
+        Brush.Color = 16737792
+        Pen.Style = psClear
+        Shape = stRoundRect
+        ExplicitLeft = 56
+        ExplicitTop = 16
+        ExplicitWidth = 65
+        ExplicitHeight = 65
+      end
+      object btnExecute: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 752
+        Height = 43
+        Align = alClient
+        Caption = 'Fechar'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -15
+        Font.Name = 'Segoe UI Semibold'
+        Font.Style = []
+        ParentFont = False
+        OnClick = btnExecuteClick
+        ExplicitLeft = 8
+        ExplicitTop = 11
+        ExplicitHeight = 81
       end
     end
   end

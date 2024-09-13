@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
 
 type
   TframeInfNutri = class(TFrame)
@@ -64,6 +64,12 @@ type
     gbAdcRDC429: TGroupBox;
     edtYYY429: TLabeledEdit;
     edtZZZZZ429: TLabeledEdit;
+    pnButtom: TPanel;
+    lbCopyrigth: TLabel;
+    pnExecute: TPanel;
+    shpExecute: TShape;
+    btnExecute: TSpeedButton;
+    procedure btnExecuteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -73,5 +79,10 @@ type
 implementation
 
 {$R *.dfm}
+
+procedure TframeInfNutri.btnExecuteClick(Sender: TObject);
+begin
+  Self.Free;
+end;
 
 end.

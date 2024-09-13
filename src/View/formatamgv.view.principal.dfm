@@ -25,7 +25,257 @@ object frmPrincipal: TfrmPrincipal
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
-    ExplicitHeight = 600
+    object pnMain: TPanel
+      Left = 0
+      Top = 100
+      Width = 800
+      Height = 519
+      Align = alClient
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitTop = 105
+      object pnLegend: TPanel
+        AlignWithMargins = True
+        Left = 24
+        Top = 20
+        Width = 752
+        Height = 55
+        Margins.Left = 24
+        Margins.Top = 20
+        Margins.Right = 24
+        Margins.Bottom = 20
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object lbLegenda: TLabel
+          Left = 0
+          Top = 0
+          Width = 752
+          Height = 32
+          Align = alTop
+          Caption = 'Ferramenta de formata'#231#227'o de m'#225'scara dos arquivos de balan'#231'a.'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = 32
+          Font.Name = 'Segoe UI Semibold'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 698
+        end
+        object Label1: TLabel
+          Left = 0
+          Top = 30
+          Width = 752
+          Height = 25
+          Align = alBottom
+          Caption = 'Para an'#225'lise t'#233'cnica dos arquivos gerados pelo sistema.'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 7697781
+          Font.Height = 25
+          Font.Name = 'Segoe UI Semibold'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 457
+        end
+      end
+      object pnSource: TPanel
+        AlignWithMargins = True
+        Left = 24
+        Top = 241
+        Width = 752
+        Height = 69
+        Margins.Left = 24
+        Margins.Top = 20
+        Margins.Right = 24
+        Margins.Bottom = 20
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitTop = 201
+        object lbSource: TLabel
+          AlignWithMargins = True
+          Left = 0
+          Top = 0
+          Width = 752
+          Height = 17
+          Margins.Left = 0
+          Margins.Top = 0
+          Margins.Right = 0
+          Margins.Bottom = 5
+          Align = alTop
+          Caption = 'Arquivo analisado:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = 18
+          Font.Name = 'Segoe UI Semibold'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 112
+        end
+        object cbSource: TComboBox
+          Left = 0
+          Top = 22
+          Width = 752
+          Height = 28
+          Align = alClient
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = 20
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ItemIndex = 0
+          ParentFont = False
+          TabOrder = 0
+          Text = 'ARQUIVO DE ITENS'
+          Items.Strings = (
+            'ARQUIVO DE ITENS'
+            'ARQUIVOS DE INFORMA'#199#195'O NUTRICIONAL'
+            'ARQUIVO DE INFORMA'#199#213'ES EXTRAS'
+            'ARQUIVO DE FORNECEDORES'
+            'ARQUIVO DE TARAS PREDETERMINADAS')
+        end
+      end
+      object pnInput: TPanel
+        AlignWithMargins = True
+        Left = 24
+        Top = 115
+        Width = 752
+        Height = 86
+        Margins.Left = 24
+        Margins.Top = 20
+        Margins.Right = 24
+        Margins.Bottom = 20
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 2
+        ExplicitTop = 95
+        object lbInput: TLabel
+          Left = 0
+          Top = 0
+          Width = 752
+          Height = 17
+          Align = alTop
+          Caption = 'Registro para an'#225'lise:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = 18
+          Font.Name = 'Segoe UI Semibold'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 129
+        end
+        object edtInput: TEdit
+          Left = 0
+          Top = 17
+          Width = 752
+          Height = 69
+          Align = alClient
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          Text = 
+            'N004194003030100601010220014008003000000014100000|00010302010050' +
+            '1010220034032014008003000000014100000000000000|'
+          ExplicitHeight = 23
+        end
+      end
+      object pnButtom: TPanel
+        Left = 0
+        Top = 438
+        Width = 800
+        Height = 81
+        Align = alBottom
+        BevelOuter = bvNone
+        Color = clWhite
+        Padding.Left = 24
+        Padding.Top = 10
+        Padding.Right = 24
+        Padding.Bottom = 7
+        ParentBackground = False
+        TabOrder = 3
+        ExplicitTop = 538
+        object lbCopyrigth: TLabel
+          Left = 24
+          Top = 61
+          Width = 752
+          Height = 13
+          Align = alBottom
+          Alignment = taCenter
+          Caption = 'Desenvolvimentos de Sistemas Galileo 2024  '#174
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Segoe UI Semibold'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 240
+        end
+        object pnExecute: TPanel
+          Left = 24
+          Top = 10
+          Width = 752
+          Height = 43
+          Align = alTop
+          BevelOuter = bvNone
+          TabOrder = 0
+          object shpExecute: TShape
+            Left = 0
+            Top = 0
+            Width = 752
+            Height = 43
+            Align = alClient
+            Brush.Color = 16737792
+            Pen.Style = psClear
+            Shape = stRoundRect
+            ExplicitLeft = 56
+            ExplicitTop = 16
+            ExplicitWidth = 65
+            ExplicitHeight = 65
+          end
+          object btnExecute: TSpeedButton
+            Left = 0
+            Top = 0
+            Width = 752
+            Height = 43
+            Align = alClient
+            Caption = 'Executar'
+            Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -15
+            Font.Name = 'Segoe UI Semibold'
+            Font.Style = []
+            ParentFont = False
+            OnClick = btnExecuteClick
+            ExplicitLeft = 8
+            ExplicitTop = 11
+            ExplicitHeight = 81
+          end
+        end
+      end
+    end
+    object pnDiv: TPanel
+      Left = 0
+      Top = 99
+      Width = 800
+      Height = 1
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 12829635
+      ParentBackground = False
+      TabOrder = 1
+      ExplicitLeft = 24
+      ExplicitTop = 119
+      ExplicitWidth = 752
+    end
     object pnTop: TPanel
       Left = 0
       Top = 0
@@ -39,7 +289,10 @@ object frmPrincipal: TfrmPrincipal
       Padding.Right = 24
       Padding.Bottom = 19
       ParentBackground = False
-      TabOrder = 0
+      TabOrder = 2
+      ExplicitLeft = 24
+      ExplicitTop = 20
+      ExplicitWidth = 752
       object imgLogo: TImage
         Left = 24
         Top = 20
@@ -386,6 +639,7 @@ object frmPrincipal: TfrmPrincipal
         Padding.Bottom = 14
         ParentBackground = False
         TabOrder = 0
+        ExplicitLeft = 550
         object pnManual: TPanel
           Left = 0
           Top = 14
@@ -472,257 +726,6 @@ object frmPrincipal: TfrmPrincipal
           end
         end
       end
-    end
-    object pnButtom: TPanel
-      Left = 0
-      Top = 538
-      Width = 800
-      Height = 81
-      Align = alBottom
-      BevelOuter = bvNone
-      Color = clWhite
-      Padding.Left = 24
-      Padding.Top = 10
-      Padding.Right = 24
-      Padding.Bottom = 7
-      ParentBackground = False
-      TabOrder = 1
-      ExplicitTop = 380
-      object lbCopyrigth: TLabel
-        Left = 24
-        Top = 61
-        Width = 752
-        Height = 13
-        Align = alBottom
-        Alignment = taCenter
-        Caption = 'Desenvolvimentos de Sistemas Galileo 2024  '#174
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Segoe UI Semibold'
-        Font.Style = []
-        ParentFont = False
-        ExplicitWidth = 240
-      end
-      object pnExecute: TPanel
-        Left = 24
-        Top = 10
-        Width = 752
-        Height = 43
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object shpExecute: TShape
-          Left = 0
-          Top = 0
-          Width = 752
-          Height = 43
-          Align = alClient
-          Brush.Color = 16737792
-          Pen.Style = psClear
-          Shape = stRoundRect
-          ExplicitLeft = 56
-          ExplicitTop = 16
-          ExplicitWidth = 65
-          ExplicitHeight = 65
-        end
-        object btnExecute: TSpeedButton
-          Left = 0
-          Top = 0
-          Width = 752
-          Height = 43
-          Align = alClient
-          Caption = 'Executar'
-          Flat = True
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
-          Font.Height = -15
-          Font.Name = 'Segoe UI Semibold'
-          Font.Style = []
-          ParentFont = False
-          OnClick = btnExecuteClick
-          ExplicitLeft = 8
-          ExplicitTop = 11
-          ExplicitHeight = 81
-        end
-      end
-    end
-    object pnMain: TPanel
-      Left = 0
-      Top = 100
-      Width = 800
-      Height = 438
-      Align = alClient
-      BevelOuter = bvNone
-      Color = clWhite
-      Padding.Left = 24
-      Padding.Top = 20
-      Padding.Right = 24
-      Padding.Bottom = 20
-      ParentBackground = False
-      TabOrder = 2
-      ExplicitHeight = 419
-      object pnLegend: TPanel
-        AlignWithMargins = True
-        Left = 24
-        Top = 20
-        Width = 752
-        Height = 55
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 0
-        Margins.Bottom = 20
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object lbLegenda: TLabel
-          Left = 0
-          Top = 0
-          Width = 752
-          Height = 32
-          Align = alTop
-          Caption = 'Ferramenta de formata'#231#227'o de m'#225'scara dos arquivos de balan'#231'a.'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = 32
-          Font.Name = 'Segoe UI Semibold'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 698
-        end
-        object Label1: TLabel
-          Left = 0
-          Top = 30
-          Width = 752
-          Height = 25
-          Align = alBottom
-          Caption = 'Para an'#225'lise t'#233'cnica dos arquivos gerados pelo sistema.'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 7697781
-          Font.Height = 25
-          Font.Name = 'Segoe UI Semibold'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 457
-        end
-      end
-      object pnSource: TPanel
-        AlignWithMargins = True
-        Left = 24
-        Top = 201
-        Width = 752
-        Height = 69
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 0
-        Margins.Bottom = 20
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 1
-        object lbSource: TLabel
-          AlignWithMargins = True
-          Left = 0
-          Top = 0
-          Width = 752
-          Height = 17
-          Margins.Left = 0
-          Margins.Top = 0
-          Margins.Right = 0
-          Margins.Bottom = 5
-          Align = alTop
-          Caption = 'Arquivo analisado:'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = 18
-          Font.Name = 'Segoe UI Semibold'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 112
-        end
-        object cbSource: TComboBox
-          Left = 0
-          Top = 22
-          Width = 752
-          Height = 28
-          Align = alClient
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = 20
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ItemIndex = 0
-          ParentFont = False
-          TabOrder = 0
-          Text = 'ARQUIVO DE ITENS'
-          Items.Strings = (
-            'ARQUIVO DE ITENS'
-            'ARQUIVOS DE INFORMA'#199#195'O NUTRICIONAL'
-            'ARQUIVO DE INFORMA'#199#213'ES EXTRAS'
-            'ARQUIVO DE FORNECEDORES'
-            'ARQUIVO DE TARAS PREDETERMINADAS')
-          ExplicitTop = 25
-        end
-      end
-      object pnInput: TPanel
-        AlignWithMargins = True
-        Left = 24
-        Top = 95
-        Width = 752
-        Height = 86
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 0
-        Margins.Bottom = 20
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 2
-        object lbInput: TLabel
-          Left = 0
-          Top = 0
-          Width = 752
-          Height = 17
-          Align = alTop
-          Caption = 'Registro para an'#225'lise:'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = 18
-          Font.Name = 'Segoe UI Semibold'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 129
-        end
-        object edtInput: TEdit
-          Left = 0
-          Top = 17
-          Width = 752
-          Height = 69
-          Align = alClient
-          BevelInner = bvNone
-          BevelOuter = bvNone
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          TabOrder = 0
-          Text = 
-            'N004194003030100601010220014008003000000014100000|00010302010050' +
-            '1010220034032014008003000000014100000000000000|'
-          ExplicitHeight = 23
-        end
-      end
-    end
-    object pnDiv: TPanel
-      Left = 0
-      Top = 99
-      Width = 800
-      Height = 1
-      Align = alTop
-      BevelOuter = bvNone
-      Color = 12829635
-      ParentBackground = False
-      TabOrder = 3
     end
   end
 end
