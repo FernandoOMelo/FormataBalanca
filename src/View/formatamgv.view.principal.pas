@@ -36,8 +36,14 @@ type
     lbCopyrigth: TLabel;
     procedure btnFecharClick(Sender: TObject);
     procedure btnExecuteClick(Sender: TObject);
+    procedure pnTopMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure pnTopMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure pnTopMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+    procedure btnManualClick(Sender: TObject);
   private
     { Private declarations }
+    dX, dY: Integer;
+    isMouseDown: Boolean;
   public
     { Public declarations }
   end;
@@ -48,7 +54,8 @@ var
 implementation
 
 uses
-  formatamgv.model.principal;
+  formatamgv.model.principal,
+  ShellAPI;
 
 {$R *.dfm}
 
@@ -67,6 +74,30 @@ end;
 procedure TfrmPrincipal.btnFecharClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TfrmPrincipal.btnManualClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'Open', 'https://help.toledobrasil.com/mgv7/v7_0_/HTML_PAGES/help.html', nil, '', 0);
+end;
+
+procedure TfrmPrincipal.pnTopMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  dX := X;
+  dY := Y;
+  isMouseDown := True;
+end;
+
+procedure TfrmPrincipal.pnTopMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+begin
+  if (isMouseDown) and (Self.WindowState = wsNormal) then
+    SetBounds(Self.Left + (X - dx), Self.Top + (Y - dy), Self.Width, Self.Height);
+
+end;
+
+procedure TfrmPrincipal.pnTopMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  isMouseDown := False;
 end;
 
 end.

@@ -35,7 +35,6 @@ object frmPrincipal: TfrmPrincipal
       Color = clWhite
       ParentBackground = False
       TabOrder = 0
-      ExplicitTop = 105
       object pnLegend: TPanel
         AlignWithMargins = True
         Left = 24
@@ -93,7 +92,6 @@ object frmPrincipal: TfrmPrincipal
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitTop = 201
         object lbSource: TLabel
           AlignWithMargins = True
           Left = 0
@@ -125,10 +123,10 @@ object frmPrincipal: TfrmPrincipal
           Font.Height = 20
           Font.Name = 'Tahoma'
           Font.Style = []
-          ItemIndex = 0
+          ItemIndex = 1
           ParentFont = False
           TabOrder = 0
-          Text = 'ARQUIVO DE ITENS'
+          Text = 'ARQUIVOS DE INFORMA'#199#195'O NUTRICIONAL'
           Items.Strings = (
             'ARQUIVO DE ITENS'
             'ARQUIVOS DE INFORMA'#199#195'O NUTRICIONAL'
@@ -150,7 +148,6 @@ object frmPrincipal: TfrmPrincipal
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 2
-        ExplicitTop = 95
         object lbInput: TLabel
           Left = 0
           Top = 0
@@ -181,9 +178,6 @@ object frmPrincipal: TfrmPrincipal
           Font.Style = []
           ParentFont = False
           TabOrder = 0
-          Text = 
-            'N004194003030100601010220014008003000000014100000|00010302010050' +
-            '1010220034032014008003000000014100000000000000|'
           ExplicitHeight = 23
         end
       end
@@ -201,7 +195,6 @@ object frmPrincipal: TfrmPrincipal
         Padding.Bottom = 7
         ParentBackground = False
         TabOrder = 3
-        ExplicitTop = 538
         object lbCopyrigth: TLabel
           Left = 24
           Top = 61
@@ -272,9 +265,6 @@ object frmPrincipal: TfrmPrincipal
       Color = 12829635
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 24
-      ExplicitTop = 119
-      ExplicitWidth = 752
     end
     object pnTop: TPanel
       Left = 0
@@ -290,9 +280,9 @@ object frmPrincipal: TfrmPrincipal
       Padding.Bottom = 19
       ParentBackground = False
       TabOrder = 2
-      ExplicitLeft = 24
-      ExplicitTop = 20
-      ExplicitWidth = 752
+      OnMouseDown = pnTopMouseDown
+      OnMouseMove = pnTopMouseMove
+      OnMouseUp = pnTopMouseUp
       object imgLogo: TImage
         Left = 24
         Top = 20
@@ -639,7 +629,6 @@ object frmPrincipal: TfrmPrincipal
         Padding.Bottom = 14
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 550
         object pnManual: TPanel
           Left = 0
           Top = 14
@@ -676,6 +665,7 @@ object frmPrincipal: TfrmPrincipal
             Font.Name = 'Segoe UI Semibold'
             Font.Style = []
             ParentFont = False
+            OnClick = btnManualClick
             ExplicitLeft = 24
             ExplicitTop = 24
             ExplicitWidth = 23
