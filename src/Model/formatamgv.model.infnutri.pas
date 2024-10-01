@@ -361,16 +361,16 @@ begin
     InfNutri429.T     := Copy(AValue, 50, 1);
     InfNutri429.LLLLL := Copy(AValue, 51, 5);
     InfNutri429.GGGGG := Copy(AValue, 56, 5);
-    InfNutri429.W     := ifThen(AValue.Length > 61, Copy(AValue, 61, 1), '0');
-    InfNutri429.AAAAA := ifThen(AValue.Length > 61, Copy(AValue, 62, 5), '00000');
-    InfNutri429.BBBBB := ifThen(AValue.Length > 61, Copy(AValue, 67, 5), '00000');
-    InfNutri429.CCCCC := ifThen(AValue.Length > 61, Copy(AValue, 72, 5), '00000');
-    InfNutri429.DDDDD := ifThen(AValue.Length > 61, Copy(AValue, 77, 5), '00000');
-    InfNutri429.E     := ifThen(AValue.Length > 61, Copy(AValue, 82, 1), '0');
-    InfNutri429.FFF   := ifThen(AValue.Length > 61, Copy(AValue, 83, 3), '000');
-    InfNutri429.GGG   := ifThen(AValue.Length > 61, Copy(AValue, 86, 3), '000');
-    InfNutri429.YYY   := ifThen(AValue.Length > 61, Copy(AValue, 89, 3), '000');
-    InfNutri429.ZZZZZ := ifThen(AValue.Length > 61, Copy(AValue, 92, 5), '00000');
+    InfNutri429.W     := ifThen(AValue.Length > 61, Copy(AValue, 61, 1), '');
+    InfNutri429.AAAAA := ifThen(AValue.Length > 61, Copy(AValue, 62, 5), '');
+    InfNutri429.BBBBB := ifThen(AValue.Length > 61, Copy(AValue, 67, 5), '');
+    InfNutri429.CCCCC := ifThen(AValue.Length > 61, Copy(AValue, 72, 5), '');
+    InfNutri429.DDDDD := ifThen(AValue.Length > 61, Copy(AValue, 77, 5), '');
+    InfNutri429.E     := ifThen(AValue.Length > 61, Copy(AValue, 82, 1), '');
+    InfNutri429.FFF   := ifThen(AValue.Length > 61, Copy(AValue, 83, 3), '');
+    InfNutri429.GGG   := ifThen(AValue.Length > 61, Copy(AValue, 86, 3), '');
+    InfNutri429.YYY   := ifThen(AValue.Length > 61, Copy(AValue, 89, 3), '');
+    InfNutri429.ZZZZZ := ifThen(AValue.Length > 61, Copy(AValue, 92, 5), '');
   except
     on E: Exception do
     begin
